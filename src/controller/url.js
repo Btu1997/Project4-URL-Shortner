@@ -5,12 +5,12 @@ const redis = require('redis')
 const {promisify} = require("util")
 
 
-const redisClient = redis.createClient(
+const redisClient = redis.createClient(                             //user link ,port,password created on redis labs
     18801,
     "redis-18801.c264.ap-south-1-1.ec2.cloud.redislabs.com",
     { no_ready_check: true }
   );
-  redisClient.auth("i4kt77pDL2TaAFET2oKLSyCRbYxfcced", function (err) {
+  redisClient.auth("i4kt77pDL2TaAFET2oKLSyCRbYxfcced", function (err) {             //password
     if (err) throw err;
   });
   

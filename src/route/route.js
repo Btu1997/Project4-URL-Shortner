@@ -19,9 +19,6 @@ router.get(
 )
 
 
-
-
-
 //=========================== if endpoint is not correct==========================================
 
 router.all("/*", function (req, res) {
